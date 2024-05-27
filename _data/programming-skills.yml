@@ -1,0 +1,49 @@
+- name: >- 
+        Core Programming Languages:
+        Java, Python and Javascript
+  percentage: 90
+  color: danger
+
+- name: Python
+  percentage: 80
+  color:
+
+- name: Javascript
+  percentage: 90
+  color: secondary
+
+- name: Quarkus
+  percentage: 90
+  color: danger
+
+- name: Spring
+  percentage: 90
+  color:
+
+- name: NextJs
+  percentage: 90
+  color: secondary
+
+- name: React
+  percentage: 90
+  color: danger
+
+- name: Hibernate
+  percentage: 90
+  color:
+
+- name: Redis
+  percentage: 90
+  color: secondary
+
+- name: Kafka
+  percentage: 90
+  color: danger
+
+- name: Kubernetes
+  percentage: 90
+  color:
+
+- name: AWS Services
+  percentage: 90
+  color: secondary
