@@ -1,0 +1,29 @@
+name: Build And Deploy
+run-name: ${{ gitea.actor }} is runs ci pipeline
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-docker
+    if: gitea.ref == 'refs/heads/main'
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Use Ruby
+        uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+
+      - name: Install bundle
+        run: bundle install
+
+      - name: Build Website
+        run: JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: com-ricardovz-web
+          directory: _site
+          wranglerVersion: "3"
