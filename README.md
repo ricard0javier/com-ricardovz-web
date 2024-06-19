@@ -1,10 +1,10 @@
-# Magdalena Villanueva - Website
+# Ricardo Villanueva - Website
 
 ## Useful Links
 
-- (Template)[https://youssefraafatnasry.github.io/portfolYOU/]
-- (Template Documentation)[https://youssefraafatnasry.github.io/portfolYOU/docs/]
-- (Jekyll SEO Tag)[https://github.com/jekyll/jekyll-seo-tag]
+- [Template](https://youssefraafatnasry.github.io/portfolYOU/)
+- [Template Documentation](https://youssefraafatnasry.github.io/portfolYOU/docs/)
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag)
 
 ## Development
 
